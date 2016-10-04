@@ -19,5 +19,5 @@ deployment:
         branch: master
         commands: 
             - docker login -u superdids -p $DOCKER_PASSWORD -e didrik.aubert@gmail.com
-            - docker tag alpine_node_server_web superdids/devops
+            - docker tag alpine-node-server superdids/devops
             - docker push superdids/devops
