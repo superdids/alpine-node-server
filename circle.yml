@@ -13,3 +13,11 @@ dependencies:
 test:
     override:
         - docker-compose up -d
+
+deployment:
+    master:
+        branch: master
+        commands: 
+            - docker login -u superdids -p $DOCKER_PASSWORD
+            - docker tag devops_web superdids/devops
+            - docker push superdids/devops
