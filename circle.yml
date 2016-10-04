@@ -18,6 +18,6 @@ deployment:
     master:
         branch: master
         commands: 
-            - docker login -u superdids -p $DOCKER_PASSWORD
+            - docker login -u superdids -p $DOCKER_PASSWORD -e didrik.aubert@gmail.com
             - docker tag devops_web superdids/devops
             - docker push superdids/devops
