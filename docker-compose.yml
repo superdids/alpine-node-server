@@ -4,6 +4,6 @@ services:
         build: .
         ports:
             - '9000:9000'
-        container_name: devops-node-app
+        container_name: alpine-node-server # devops-node-app
         environment:
-            - 'MYSQL=mysql://user:pass@example.com:3306/dbname'
+        - 'MYSQL=mysql://user:pass@example.com:3306/dbname'
